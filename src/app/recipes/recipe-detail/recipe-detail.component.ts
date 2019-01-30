@@ -31,11 +31,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   onAddToShoppingList() {
-    this.recipe.ingredients.map(
-      (ingredient: Ingredient) => {
-        this.shoppligListService.addIngredientToList(ingredient);
-      }
-    );
+    this.shoppligListService.addIngredients(this.recipe.ingredients);
   }
 
   onEditRecipe() {

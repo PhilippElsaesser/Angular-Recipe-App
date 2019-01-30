@@ -20,6 +20,6 @@ export class ShoppingEditComponent {
     const amount = this.amountInputRef.nativeElement.value;
     const unit = this.unitInputRef.nativeElement.value;
     const newIngredient = new Ingredient(name, amount, unit);
-    this.shoppingListService.addIngredientToList(newIngredient);
+    this.shoppingListService.addIngredient(newIngredient);
   }
 }
